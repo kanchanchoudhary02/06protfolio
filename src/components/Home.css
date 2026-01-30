@@ -1,0 +1,909 @@
+/* =====================================
+   COLOR THEME (Hydrangea Pastel)
+===================================== */
+:root {
+  /* Backgrounds */
+  --bg-main: #0d0b14;          
+  --card-bg: linear-gradient(
+    135deg,
+    #1b1630,
+    #120f1f
+  );
+
+  /* Primary Theme */
+  --primary: #b983ff;         
+  --secondary: #ff8bd3;       
+  --accent: #1f1a2e;          
+
+  /* Text */
+  --text-dark: #ffffff;
+  --text-light: #b6b2c2;
+
+  /* Borders */
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+.project-card,
+.resume-card,
+.contact-card,
+.achievement-post {
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 26px;
+  padding: 45px;
+}
+
+
+
+
+/* =====================================
+   GLOBAL
+===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #0d0b14 0%,
+    #120e1d 40%,
+    #0d0b14 100%
+  );
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
+}
+
+
+
+
+/* =====================================
+   HOME
+===================================== */
+.home {
+  min-height: 100vh;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome {
+  color: var(--primary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.content {
+  max-width: 650px;
+}
+
+.content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.content h1 span {
+  color: var(--primary);
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.about {
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 35px;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary {
+  background: linear-gradient(135deg, #b983ff, #ff8bd3);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.primary:hover {
+  box-shadow: 0 0 30px #b983ff88;
+}
+
+
+
+.outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+.contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 6%;
+}
+
+.contact-card {
+  max-width: 1100px;
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(173, 86, 196, 0.18);
+}
+
+/* LEFT */
+.contact-info {
+  flex: 1;
+  padding: 50px;
+}
+
+.contact-info h2 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.tagline {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.info-box {
+  margin-bottom: 18px;
+  color: var(--text-light);
+}
+
+.highlight {
+  background: var(--accent);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.social {
+  margin-top: 35px;
+  display: flex;
+  gap: 18px;
+}
+
+.social i {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ================================
+   CONTACT FORM RIGHT SIDE
+================================ */
+
+.contact-form {
+  flex: 1;
+  padding: 60px;
+  background: linear-gradient(
+    135deg,
+    rgba(33, 22, 45, 0.95),
+    rgba(39, 20, 57, 0.95)
+  );
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 25px 70px rgba(79, 51, 92, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+
+/* Heading */
+.contact-form h3 {
+  font-size: 1.9rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+/* ================================
+   ROW (NAME + EMAIL)
+================================ */
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-row input {
+  width: 100%;
+}
+
+/* ================================
+   INPUTS
+================================ */
+
+/* ================================
+   CONTACT FORM RIGHT SIDE
+================================ */
+
+.contact-form {
+  flex: 1;
+  padding: 60px;
+  background-color: #370558; /* Soft purple */
+
+
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 25px 70px rgba(79, 51, 92, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+/* Heading */
+.contact-form h3 {
+  font-size: 1.9rem;
+  color: #d9b6ff;
+  margin-bottom: 40px;
+}
+
+/* ================================
+   ROW (NAME + EMAIL)
+================================ */
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-row input {
+  width: 100%;
+}
+
+/* ================================
+   INPUTS
+================================ */
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #c084fc;
+  padding: 12px 5px;
+  margin-bottom: 35px;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #cfc3ff;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff9ce0;
+}
+
+/* ================================
+   TEXTAREA
+================================ */
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+  margin-top: 10px;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px 38px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #c084fc, #ff9ce0);
+  color: #28033a;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(192, 132, 252, 0.6);
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 40px 25px;
+    border-radius: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* =====================================
+   ABOUT
+===================================== */
+.about-hero {
+  padding-bottom: 80px;
+}
+
+.hero-overlay {
+  text-align: center;
+  padding: 120px 10% 60px;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  color: var(--primary);
+}
+
+.hero-sub {
+  font-size: 1.3rem;
+  color: var(--text-light);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 10%;
+}
+
+.about-content h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.section {
+  max-width: 900px;
+  margin: 60px auto 0;
+  padding: 0 10%;
+}
+
+.section h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.section ul li {
+  margin-bottom: 14px;
+  color: var(--text-light);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background: var(--accent);
+  border: 1px solid var(--secondary);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+/* =====================================
+   RESUME
+===================================== */
+.resume-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-card {
+  background: var(--card-bg);
+  padding: 60px 50px;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 45px rgba(173, 86, 196, 0.2);
+}
+
+.resume-card h1 {
+  color: var(--primary);
+  font-size: 2.8rem;
+}
+
+.role {
+  color: var(--text-light);
+  margin: 20px 0;
+}
+
+.resume-text {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.resume-download {
+  padding: 14px 40px;
+  border-radius: 30px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resume-download:hover {
+  box-shadow: 0 12px 35px rgba(173, 86, 196, 0.5);
+}
+
+/* =====================================
+   PROJECTS
+===================================== */
+/* ================================
+   PROJECTS SECTION
+================================ */
+
+.projects-section {
+  padding: 90px 120px;
+}
+
+/* MAIN HEADING (Projects / Achievements) */
+.projects-section h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+
+  color: #ffffff;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* underline style */
+.projects-section h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #c084fc, #ff9ce0);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* ================================
+   PROJECT CARDS GRID
+================================ */
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px; /* spacing increased */
+}
+
+/* ================================
+   PROJECT CARD
+================================ */
+
+/* ===============================
+   WRAPPER
+================================ */
+
+.projects-wrapper {
+  width: 100%;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===============================
+   PAGE HEADING (Projects / Achievements)
+================================ */
+
+.page-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* underline */
+.page-title::after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #c084fc, #ff9ce0);
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* achievements ke liye extra gap */
+.achievement-title {
+  margin-top: 10px;
+}
+
+/* ===============================
+   PROJECTS GRID
+================================ */
+
+.projects-grid {
+  width: 85%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px; /* 👈 projects ke bich gap */
+  margin-bottom: 60px;
+}
+
+/* ===============================
+   PROJECT CARD
+================================ */
+
+.project-card {
+  background: linear-gradient(
+    135deg,
+    rgba(35, 18, 55, 0.95),
+    rgba(20, 10, 35, 0.95)
+  );
+  border-radius: 26px;
+  padding: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+   PROJECT TEXT
+================================ */
+
+.project-card h2 {
+  color: #d9b6ff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tech {
+  color: #ff9ce0;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.desc {
+  color: #d1c6e0;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* ===============================
+   ACHIEVEMENTS
+================================ */
+
+.achievement-posts {
+  width: 85%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+/* each post */
+.achievement-post {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 20, 65, 0.95),
+    rgba(25, 12, 45, 0.95)
+  );
+  border-radius: 26px;
+  padding: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* caption */
+.post-caption {
+  color: #e8dcff;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* image placeholder */
+.post-image {
+  height: 180px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .projects-grid,
+  .achievement-posts {
+    width: 92%;
+  }
+
+  .project-card,
+  .achievement-post {
+    padding: 30px;
+  }
+
+  .page-title {
+    font-size: 38px;
+  }
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section {
+    padding: 70px 25px;
+  }
+}
+
+/* =====================================
+   ACHIEVEMENTS
+===================================== */
+/* =========================
+   ACHIEVEMENT POSTS
+========================= */
+
+.achievement-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.achievement-post {
+  background: var(--card-bg);
+  border-radius: 26px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid var(--border-soft);
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* TAG */
+.achievement-post::before {
+  content: "🏆 Achievement";
+  position: absolute;
+  top: -14px;
+  left: 30px;
+  background: var(--primary);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* TEXT */
+.post-caption {
+  color: var(--text-dark);
+  font-size: 15.5px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+
+/* IMAGE WRAPPER */
+.post-image {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  height: auto;
+}
+
+/* IMAGE */
+.post-image img {
+  width: 100%;
+  height: 450px;     /* ✅ yahan badhao */
+  object-fit: contain;
+  border-radius: 18px;
+  background: #fff;
+}
+.post-image {
+  border: 5px solid rgb(233, 226, 226);
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .achievement-post {
+    padding: 22px;
+  }
+
+  .post-image img {
+    max-height: 300px;
+  }
+}
+
+
+
+
+/* Floating icon */
+.chat-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #6e6e6e;
+  color: white;
+  font-size: 26px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Chat box */
+.chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 300px;
+  height: 420px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+/* Header */
+.chat-header {
+  background: #bfbfbf;
+  padding: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Messages */
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Message bubbles */
+.msg {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  font-size: 14px;
+}
+
+.msg.user {
+  background: #d1e7ff;
+  align-self: flex-end;
+}
+
+.msg.bot {
+  background: #ffffff;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  background: #6e6e6e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.project-card,
+.contact-card,
+.resume-card,
+.achievement-post {
+  background: var(--card-bg);
+  border-radius: 26px;
+  padding: 45px;
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+}
+
+
+
+
