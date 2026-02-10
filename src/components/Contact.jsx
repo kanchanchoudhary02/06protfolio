@@ -15,12 +15,12 @@ function Contact() {
 
           <div className="info-box">
             <p><strong>Email</strong></p>
-            <span>kanchan31choudhary</span>
+            <span>sutharriya604@gmail.com</span>
           </div>
 
           <div className="info-box highlight">
             <p><strong>Phone</strong></p>
-            <span>9079068849</span>
+            <span>9784568276</span>
           </div>
 
           <div className="social">

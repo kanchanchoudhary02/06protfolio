@@ -5,9 +5,9 @@ function About() {
     <section className="about-hero">
       {/* HERO SECTION */}
       <div className="hero-overlay">
-        <h1 className="hero-name">Kanchan Choudhary</h1>
+        <h1 className="hero-name">Riya Suthar</h1>
         <p className="hero-sub">
-          Aspiring Software & Web Developer
+          Aspiring Software & Frontend Developer
         </p>
       </div>
 
@@ -44,7 +44,6 @@ function About() {
           <span>React</span>
           <span>Bootstrap</span>
           <span>Tailwind CSS</span>
-          <span>Appwrite</span>
           <span>Git</span>
           <span>GitHub</span>
         </div>
@@ -56,7 +55,7 @@ function About() {
         <ul>
           <li>
             <strong>Weather Application:</strong> Responsive weather app using
-            HTML, CSS, JavaScript with real-time API integration.
+            HTML, CSS, JavaScript and React with real-time API integration.
           </li>
           <li>
             <strong>Amazon Clone (Frontend):</strong> Built using React, HTML,
@@ -70,8 +69,6 @@ function About() {
         <h2>Internship Experience</h2>
         <ul>
           <li>Application Development Intern – Codec Technology</li>
-          <li>Software Engineer Intern – Cognifyz</li>
-          <li>Software Developer Intern – Blustock (Offer Letter Received)</li>
         </ul>
       </div>
 
@@ -79,9 +76,9 @@ function About() {
       <div className="section">
         <h2>Education</h2>
         <ul>
-          <li>B.Tech (3rd Year) – CGPA: 8.02</li>
-          <li>Class XII (PCM) – 70%</li>
-          <li>Class X (RBSE) – 86%</li>
+          <li>B.Tech (3rd Year) – CGPA: 7.89</li>
+          <li>Class XII (PCM) – 80%</li>
+          <li>Class X (RBSE) – 94%</li>
         </ul>
       </div>
     </section>

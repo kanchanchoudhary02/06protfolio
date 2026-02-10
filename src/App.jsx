@@ -19,7 +19,7 @@ function App() {
    <BrowserRouter>
     
       <Navbar />
-      <ChatBot/>
+      {/* <ChatBot/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
