@@ -5,7 +5,7 @@ function About() {
     <section className="about-hero">
       {/* HERO SECTION */}
       <div className="hero-overlay">
-        <h1 className="hero-name">Riya Suthar</h1>
+        <h1 className="hero-name">Kanchan choudhary</h1>
         <p className="hero-sub">
           Aspiring Software & Frontend Developer
         </p>
@@ -61,8 +61,13 @@ function About() {
             <strong>Amazon Clone (Frontend):</strong> Built using React, HTML,
             CSS and JavaScript.
           </li>
+          <li>
+  <strong>Newspaper Website:</strong> Developed a responsive news portal using HTML, CSS and JavaScript featuring latest news sections, category navigation and user-friendly interface.
+</li>
+
         </ul>
       </div>
+
 
       {/* INTERNSHIP */}
       <div className="section">
